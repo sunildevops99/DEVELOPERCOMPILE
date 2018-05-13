@@ -54,5 +54,20 @@
     </snapshotRepository>
   </distributionManagement>
 </profile>
+	<profile>
+     <id>xcard-deploy</id>
+ <distributionManagement>
+    <repository>
+      <id>xcard-releases</id>
+      <name>xcard-releases</name>
+      <url>http://ec2-18-191-15-166.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/xcard-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>xcard-snapshots</id>
+      <name>xcard-snapshots</name>
+      <url>http://ec2-18-191-15-166.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/xcard-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</profile>
   </profiles>
 </project>
