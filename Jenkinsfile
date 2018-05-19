@@ -20,6 +20,9 @@ node('mavenlabel') {
       junit '**/target/surefire-reports/TEST-*.xml'
       archive 'target/*.jar'
    }
+   stage('publish') {
+     echo 'vdjhvbhjdsb'
+   }
    
 
 }
