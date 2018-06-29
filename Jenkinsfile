@@ -10,8 +10,8 @@ node('mavenagent') {
    }
    stage('Build') {
       
-      if (isUnix()) {
-         sh "'${mvnHome}/bin/mn' clean install"
+       if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
