@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mkyong.common</groupId>
-  <artifactId>SpringExample</artifactId>
+  <artifactId>DEVELOPERCOMPILE</artifactId>
   <packaging>jar</packaging>
   <version>5.0.0</version>
-  <name>SpringExample</name>
+  <name>DEVELOPERCOMPILE</name>
   <url>http://maven.apache.org</url>
 	
 	<!--repositories>
@@ -38,22 +38,5 @@
 	</dependency> 
   </dependencies>
 <profiles>
-<profile>
-     <id>ycard-deploy</id>
- <distributionManagement>
-    <repository>
-      <id>ycard-releases</id>
-      <name>ycard-releases</name>
-      <url>http://ec2-52-15-150-6.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/ycard-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>ycard-snapshots</id>
-      <name>ycard-snapshots</name>
-      <url>http://ec2-52-15-150-6.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/ycard-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
-</profile>
-	
-	
   </profiles>
 </project>
